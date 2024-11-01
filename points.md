@@ -1,6 +1,6 @@
 ### Overture places in five minutes
 
-1. Checkout the Overture [places guide](https://docs.overturemaps.org/guides/places/) for get an overview of the data and schema.
+1. Checkout the Overture [places guide](https://docs.overturemaps.org/guides/places/) for an overview of the data and schema.
 2. [Install and set up DuckDB](https://docs.overturemaps.org/getting-data/duckdb/).
 3. Get the [bounding box](https://boundingbox.klokantech.com/) for your area of interest.
 4. Query the Overture places theme to get just the data you want, from the cloud to your desktop in 30 seconds:
@@ -25,7 +25,7 @@ COPY (SELECT
      AND bbox.ymin BETWEEN 38.87 AND 41.45)
      TO 'wawa_places-philly-nj.geojson' WITH (FORMAT GDAL, DRIVER 'GeoJSON', SRS 'EPSG:4326');
 ```
-4. Drag the GeoJSON file to [kepler.gl](https://kepler.gl/). Style and visualize. 
+5. Drag the GeoJSON file to [kepler.gl](https://kepler.gl/). Style and visualize. 
 
 | ![wawa in philly](philly-area-wawa.png) |
 |:--:|
